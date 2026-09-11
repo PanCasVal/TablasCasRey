@@ -1,11 +1,14 @@
 :root {
-    --pink: #ff6f91;
-    --pink-dark: #d94c73;
-    --cream: #fff8f5;
-    --text: #3e2a30;
-    --muted: #7a636b;
+    --pink: #8d4d5f;
+    --pink-dark: #643441;
+    --cream: #fffaf5;
+    --text: #352722;
+    --muted: #735d56;
     --white: #ffffff;
-    --shadow: rgba(105, 54, 78, 0.14);
+    --shadow: rgba(72, 46, 39, 0.14);
+    --olive: #6e7c4e;
+    --gold: #c89b52;
+    --wine: #7a2f3b;
 }
 
 * {
@@ -21,8 +24,9 @@ body {
     font-family: Arial, sans-serif;
     color: var(--text);
     background:
-        radial-gradient(circle at top left, rgba(255, 197, 216, 0.55), transparent 30%),
-        linear-gradient(180deg, #fff7fb 0%, #fffdfd 100%);
+    radial-gradient(circle at top left, rgba(194, 154, 92, 0.18), transparent 28%),
+    radial-gradient(circle at top right, rgba(110, 124, 78, 0.14), transparent 24%),
+    linear-gradient(180deg, #fff9f4 0%, #fffdfb 100%);
 }
 
 .container {
@@ -36,7 +40,7 @@ body {
     z-index: 20;
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.85);
-    border-bottom: 1px solid #f4dbe5;
+    border-bottom: 1px solid #eadccf;
 }
 
 .nav {
@@ -67,7 +71,7 @@ body {
 
 .hero {
     padding: 4.5rem 0 2.5rem;
-    background: radial-gradient(circle at top right, #ffe4ee 0%, #fff7fb 45%, #fff 100%);
+    background: radial-gradient(circle at top right, rgba(145, 87, 64, 0.12) 0%, rgba(255, 249, 244, 0.9) 45%, #fff 100%);
 }
 
 .hero-content {
@@ -81,7 +85,7 @@ body {
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 0.14rem;
-    color: var(--pink-dark);
+    color: var(--wine);
     font-weight: 700;
     font-size: 0.75rem;
 }
@@ -110,7 +114,7 @@ body {
     margin-top: 1rem;
     padding: 0.95rem 1.35rem;
     border-radius: 999px;
-    background: var(--pink);
+    background: linear-gradient(135deg, var(--pink) 0%, var(--wine) 100%);
     color: var(--white);
     text-decoration: none;
     font-weight: 700;
@@ -119,15 +123,15 @@ body {
 
 .btn-primary.secondary {
     background: #fff;
-    color: var(--pink-dark);
-    border: 1px solid #f4bfd0;
+    color: var(--wine);
+    border: 1px solid #d8c3ba;
 }
 
 .hero-card,
 .product-card,
 .contact-box {
     background: rgba(255, 255, 255, 0.92);
-    border: 1px solid #f4dbe5;
+    border: 1px solid #eadccf;
     box-shadow: 0 16px 36px var(--shadow);
 }
 
@@ -147,7 +151,7 @@ body {
 
 .badge {
     padding: 0.35rem 0.75rem;
-    background: #ffe3ec;
+    background: #f4e8df;
     color: var(--pink-dark);
 }
 
@@ -260,7 +264,7 @@ body {
 .product-badge {
     display: inline-flex;
     padding: 0.3rem 0.65rem;
-    background: #ffe8f0;
+    background: #f3e5d8;
     color: var(--pink-dark);
 }
 
@@ -277,12 +281,12 @@ body {
     font-weight: 700;
 }
 
-.accent-rose { background: linear-gradient(180deg, #fff7fa 0%, #fff 100%); }
-.accent-gold { background: linear-gradient(180deg, #fffaf0 0%, #fff 100%); }
-.accent-sky { background: linear-gradient(180deg, #f6fbff 0%, #fff 100%); }
-.accent-mint { background: linear-gradient(180deg, #f6fffb 0%, #fff 100%); }
-.accent-plum { background: linear-gradient(180deg, #fcf6ff 0%, #fff 100%); }
-.accent-sand { background: linear-gradient(180deg, #fff8f0 0%, #fff 100%); }
+.accent-rose { background: linear-gradient(180deg, #fff7f4 0%, #fff 100%); }
+.accent-gold { background: linear-gradient(180deg, #fff9ec 0%, #fff 100%); }
+.accent-sky { background: linear-gradient(180deg, #f7fbff 0%, #fff 100%); }
+.accent-mint { background: linear-gradient(180deg, #f7fcf6 0%, #fff 100%); }
+.accent-plum { background: linear-gradient(180deg, #f9f3fa 0%, #fff 100%); }
+.accent-sand { background: linear-gradient(180deg, #fff7ef 0%, #fff 100%); }
 
 .contact {
     padding: 2rem 0 4rem;
@@ -295,7 +299,7 @@ body {
     gap: 1.5rem;
     border-radius: 28px;
     padding: 2rem;
-    background: linear-gradient(135deg, #fff1f6, #fffaf4);
+    background: linear-gradient(135deg, #fff4eb, #faf7f1);
 }
 
 .contact-actions {
@@ -308,7 +312,7 @@ body {
 .site-footer {
     padding: 1.25rem 0;
     background: #fff;
-    border-top: 1px solid #f4dbe5;
+    border-top: 1px solid #eadccf;
     text-align: center;
     color: var(--muted);
 }
